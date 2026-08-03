@@ -22,8 +22,10 @@ C=$(run "ON_SEQ    :" on ECSIE_SPEC_BATCHED=0)
 # Print labels with their tokens elided to just first 8 and last 4 for clarity
 preview() {
     local line="$1"
-    local label_and_first8=$(echo "$line" | awk '{for(i=1;i<=9;++i) printf "%s ", $i; print ""}')
-    local last4=$(echo "$line" | awk '{for(i=NF-3;i<=NF;++i) printf "%s ", $i; print ""}')
+    local label_and_first8
+    label_and_first8=$(echo "$line" | awk '{for(i=1;i<=9;++i) printf "%s ", $i; print ""}')
+    local last4
+    last4=$(echo "$line" | awk '{for(i=NF-3;i<=NF;++i) printf "%s ", $i; print ""}')
     echo "${label_and_first8}... ${last4}"
 }
 preview "$A"

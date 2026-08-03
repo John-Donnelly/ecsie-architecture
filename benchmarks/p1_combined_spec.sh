@@ -11,7 +11,6 @@ BIN=$SRC_DIR/repos/ECSIE/bin/ecsie_bench_measure_tps
 MODEL="${MODEL:-$HOME/ecsie_models/q4.gguf}"
 WL="${WL:-$SRC_DIR/repos/ECSIE/benchmarks/workloads/long_instruct_200.json}"
 OUT=$SRC_DIR/repos/ECSIE/benchmarks/results/p1_combined_spec.log
-LENS="ECSIE_SPEC=on ECSIE_SPEC_DEPTH=1 ECSIE_SPEC_DRAFT=lens ECSIE_LENS_DRAFT_LAYER=46"
 : > "$OUT"
 arm() {
     echo "## $1 ##" | tee -a "$OUT"
