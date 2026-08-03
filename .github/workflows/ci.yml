@@ -20,8 +20,12 @@ jobs:
       - name: Run shellcheck
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck
+          # benchmarks/results/ holds the run scripts archived alongside each
+          # measurement. They are artefacts of runs that already happened, not
+          # maintained code, so they are recorded as-is rather than linted.
           # -S warning: style nits in a research harness are noise; real bugs are not.
-          find benchmarks -name '*.sh' -print0 | xargs -0 shellcheck -S warning
+          find benchmarks -name '*.sh' -not -path 'benchmarks/results/*' -print0 \
+            | xargs -0 shellcheck -S warning
 
   manifests:
     name: validate ablation manifests
