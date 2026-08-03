@@ -1,5 +1,12 @@
 # ECSIE — Architecture & Benchmarks
 
+[![CI](https://github.com/John-Donnelly/ecsie-architecture/actions/workflows/ci.yml/badge.svg)](https://github.com/John-Donnelly/ecsie-architecture/actions/workflows/ci.yml)
+[![Docs: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-blue.svg)](LICENSE)
+[![Harness: MIT](https://img.shields.io/badge/harness-MIT-blue.svg)](LICENSE)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white)
+
+**Status:** design record — the ECSIE engine itself is proprietary and not in this repository
+
 **Entropy-Controlled Sparse Inference Engine.** A model-agnostic execution
 runtime for sparse Mixture-of-Experts language models.
 
