@@ -1,0 +1,15 @@
+{
+  "name": "high_entropy",
+  "description": "Adversarial workload designed to maximise routing entropy. Diverse topics, variable-length outputs, and high temperature to drive speculative rejection.",
+  "prompts": [
+    { "text": "Compose a sonnet about quantum entanglement written in the style of Shakespeare.", "max_tokens": 512, "temperature": 1.4 },
+    { "text": "Generate a random haiku.", "max_tokens": 32, "temperature": 2.0 },
+    { "text": "Explain the proof of Fermat's Last Theorem at a graduate mathematics level.", "max_tokens": 1024, "temperature": 0.5 },
+    { "text": "Write a dialogue between a pirate and a robot discussing the nature of consciousness.", "max_tokens": 768, "temperature": 1.6 },
+    { "text": "List every element in the periodic table with its atomic number.", "max_tokens": 1500, "temperature": 0.1 }
+  ],
+  "batch_size": 2,
+  "repetitions": 5,
+  "temperature": 1.2,
+  "seed": -1
+}

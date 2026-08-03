@@ -1,0 +1,13 @@
+{
+ "name": "long_chatml_2600",
+ "description": "long chat-templated generation",
+ "batch_size": 1,
+ "repetitions": 1,
+ "temperature": 0.0,
+ "prompts": [
+  {
+   "text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nImplement a complete Python `LRUCache` class backed by an ordered dict, with `get`, `put`, capacity eviction, type hints, docstrings, and a `__repr__`. Then write three unit tests using `unittest`. Explain each method briefly.<|im_end|>\n<|im_start|>assistant\n",
+   "max_tokens": 2600
+  }
+ ]
+}

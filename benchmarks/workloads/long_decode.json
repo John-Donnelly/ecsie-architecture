@@ -1,0 +1,14 @@
+{
+  "name": "long_decode",
+  "description": "Single long-decode prompt — amortizes cold-start / prefill overhead so the per-prompt 'tps' field converges with the warm-step rate.  Useful for measuring true steady-state batch=1 throughput.",
+  "prompts": [
+    {
+      "text": "Tell me a story about an inventor.",
+      "max_tokens": 500
+    }
+  ],
+  "batch_size": 1,
+  "repetitions": 1,
+  "temperature": 0.0,
+  "seed": 42
+}

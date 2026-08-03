@@ -1,0 +1,8 @@
+{
+  "temperature": 0.0,
+  "repetitions": 1,
+  "batch_size": 1,
+  "prompts": [
+    { "text": "Hi! I'd like to start eating healthier but I'm short on time during the week. Can you help me plan a week of simple, balanced meals for breakfast, lunch, and dinner? I'm not a big cook, so please keep the recipes easy and the grocery list manageable.", "max_tokens": 200 }
+  ]
+}

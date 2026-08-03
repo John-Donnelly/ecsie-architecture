@@ -1,0 +1,4 @@
+top_n,high_tier,low_tier,rank_mode,avg_bpw_est,warm_step_mean,mean_step_ms,note
+0,4,2,edges,1.625,0.385,2620.4,sidecar_loaded_only_no_tier_apply_yet
+8,4,2,edges,2.200,0.375,2692.4,sidecar_loaded_only_no_tier_apply_yet
+40,4,2,edges,4.500,0.355,2803.6,sidecar_loaded_only_no_tier_apply_yet

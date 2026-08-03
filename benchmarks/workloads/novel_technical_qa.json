@@ -1,0 +1,8 @@
+{
+  "temperature": 0.0,
+  "repetitions": 1,
+  "batch_size": 1,
+  "prompts": [
+    { "text": "Explain how TCP congestion control works. Cover slow start, congestion avoidance, fast retransmit, and fast recovery, and describe how the congestion window changes in response to ACKs and packet loss.", "max_tokens": 200 }
+  ]
+}

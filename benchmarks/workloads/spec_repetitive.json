@@ -1,0 +1,14 @@
+{
+  "name": "spec_repetitive",
+  "description": "Repetitive/templated decode for spec-PLD measurement. PLD shines when the model repeats recent n-grams (lists, JSON arrays, templated outputs).",
+  "prompts": [
+    {
+      "text": "Generate a numbered list of 30 fruits, one per line, in the exact format '<number>. <fruit>': 1. apple\n2. banana\n3. cherry\n4. date\n5. elderberry\n6. fig\n7. grape\n8. honeydew\n9. imbe\n10. jackfruit\n11.",
+      "max_tokens": 200
+    }
+  ],
+  "batch_size": 1,
+  "repetitions": 1,
+  "temperature": 0.0,
+  "seed": 42
+}

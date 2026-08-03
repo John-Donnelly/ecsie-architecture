@@ -1,0 +1,12 @@
+[19:36:33.936] [ecsie] [info] Engine: RamPool allocated (6144 MB, ~50% of available RAM)
+[19:36:33.952] [ecsie] [info] Engine: VramPool allocated (2479 MB, adaptive)
+[19:36:33.952] [ecsie] [info] Engine: embedding table loaded (248320 tokens, 2048 hidden)
+[19:36:37.544] [ecsie] [info] Engine: LmHead loaded (248320 vocab, 2048 hidden)
+[19:36:37.551] [ecsie] [info] Engine: HierarchicalLmHead clusters loaded from $MODELS_DIR/Models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-Q4_K_M.gguf.clusters (512 clusters)
+[19:36:37.553] [ecsie] [info] Engine: HybridQuantSidecar loaded from $MODELS_DIR/Models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-Q4_K_M.gguf.hquant (40 layers × 256 experts)
+[19:36:37.555] [ecsie] [info] Engine: sidecar summary — hier_lm_head=yes hybrid_quant=yes struct_sparsity=no eagle3=no squeezellm=no q2emb=no shared_scales=no scylla=no
+[19:36:37.556] [ecsie] [info] Engine: ExpertPredictor disabled (default — see C.3 result). Set ECSIE_EXPERT_PREDICTOR=ml or simple to enable.
+[19:36:37.556] [ecsie] [info] Engine: attention cfg: num_heads=16 num_kv_heads=2 head_dim=256 rope_theta=10000000.000000 rope_dim_count=64
+[19:36:45.063] [ecsie] [info] Engine: 40/40 transformer blocks initialised
+[19:36:45.064] [ecsie] [info] Engine: model loaded from "$MODELS_DIR/Models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-Q4_K_M.gguf"
+[measure_tps] batch_size=1 (Phase E if >1)

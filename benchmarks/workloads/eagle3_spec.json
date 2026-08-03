@@ -1,0 +1,11 @@
+{
+  "description": "EAGLE-3 spec-decoding benchmark — greedy (temp 0) so the speculative path engages; longer decode to surface acceptance-rate signal",
+  "repetitions": 1,
+  "temperature": 0.0,
+  "batch_size": 1,
+  "prompts": [
+    { "text": "The history of the Roman Empire spans many centuries. ", "max_tokens": 96 },
+    { "text": "In computer science, a sorting algorithm is ", "max_tokens": 96 },
+    { "text": "The theory of general relativity describes ", "max_tokens": 96 }
+  ]
+}

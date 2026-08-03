@@ -1,0 +1,18 @@
+[01:12:34.762] [ecsie] [info] Engine: RamPool allocated (6144 MB, ~50% of available RAM)
+[01:12:34.776] [ecsie] [info] Engine: VramPool allocated (2479 MB, adaptive, slot=3052 KB)
+[01:12:34.777] [ecsie] [info] Engine: embedding table loaded (151936 tokens, 2048 hidden)
+[01:12:36.521] [ecsie] [info] Engine: LmHead loaded (151936 vocab, 2048 hidden)
+[01:12:36.523] [ecsie] [info] Engine: sidecar summary — hier_lm_head=no hybrid_quant=no struct_sparsity=no eagle3=no squeezellm=no q2emb=no shared_scales=no scylla=no
+[01:12:36.524] [ecsie] [info] Engine: ExpertPredictor disabled (default — see C.3 result). Set ECSIE_EXPERT_PREDICTOR=ml or simple to enable.
+[01:12:36.524] [ecsie] [info] Engine: attention cfg: num_heads=32 num_kv_heads=4 head_dim=128 rope_theta=10000000.000000 rope_dim_count=0
+[01:12:40.463] [ecsie] [info] Engine: final RMSNorm loaded (output_norm.weight, 2048 dim)
+[01:12:40.463] [ecsie] [info] Engine: 48/48 transformer blocks initialised
+[01:12:40.463] [ecsie] [info] Engine: model loaded from "$MODELS_DIR/Models/Qwen3-30B-A3B-Instruct-2507-GGUF/Qwen3-30B-A3B-Instruct-2507-baseline.ecsie"
+[measure_tps] batch_size=1 (Phase E if >1)
+[latency] step=0 (batch=1)  tps=2.61  warm_step_rate=3.64  steps=199  mean_step=274.392 ms  p99_step=2258.904 ms
+          attn_norm=0.003 ms  attention=0.767 ms  ffn_norm=0.002 ms  moe_dispatch=7.480 ms
+          fused_multi_q4k: layers_used=591/591
+          fused_multi_ternary: layers_used=4347/4347
+[measure_tps] wrote 1 rows
+[01:14:01.110] [ecsie] [info] dispatch tiers — routed: vram=39744 staged=0 cpu=0 | shexp: vram=0 cpu=0 | layers: legacy=4968 fast=4968
+[01:14:01.110] [ecsie] [info] fused_multi_q4k decline breakdown — oom=0 non_vram=0 wrong_type=0 sidecar=0 harvest=0 dims=0

@@ -1,0 +1,8 @@
+{
+  "temperature": 0.0,
+  "repetitions": 1,
+  "batch_size": 1,
+  "prompts": [
+    { "text": "Write a Python function `lru_cache_with_ttl(maxsize, ttl_seconds)` that returns a decorator implementing an LRU cache where entries also expire after ttl_seconds. Include a clear docstring and handle edge cases like maxsize=0, expired entries, and unhashable arguments.", "max_tokens": 200 }
+  ]
+}

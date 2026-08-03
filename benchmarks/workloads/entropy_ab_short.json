@@ -1,0 +1,14 @@
+{
+  "name": "entropy_ab_short",
+  "description": "Short single-prompt long-decode (200 tokens) so the Pass-2 entropy A/B bench finishes in bounded time on the slow per-materialise CUDA wrapper path.  Cold-start / prefill is the same as long_decode (single prompt), only the steady-state token count differs.",
+  "prompts": [
+    {
+      "text": "Tell me a story about an inventor.",
+      "max_tokens": 200
+    }
+  ],
+  "batch_size": 1,
+  "repetitions": 1,
+  "temperature": 0.0,
+  "seed": 42
+}

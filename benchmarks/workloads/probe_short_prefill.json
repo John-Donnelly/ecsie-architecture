@@ -1,0 +1,9 @@
+{
+  "description": "Short prefill, long decode — so lr.tps approximates pure decode wall-clock (prefill negligible). Used to cross-check warm_step_rate vs honest wall-clock tok/s.",
+  "temperature": 0.0,
+  "repetitions": 1,
+  "batch_size": 1,
+  "prompts": [
+    { "text": "Explain how a transformer works.", "max_tokens": 150 }
+  ]
+}

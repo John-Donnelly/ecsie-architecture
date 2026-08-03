@@ -1,0 +1,432 @@
+[10:08:22.061] [ecsie] [info] Engine: RamPool allocated (6144 MB, ~50% of available RAM)
+[10:08:22.101] [ecsie] [info] Engine: VramPool allocated (2479 MB, adaptive)
+[10:08:22.101] [ecsie] [info] Engine: embedding table loaded (248320 tokens, 2048 hidden)
+[10:08:28.186] [ecsie] [info] Engine: LmHead loaded (248320 vocab, 2048 hidden)
+[10:08:28.188] [ecsie] [info] Engine: ExpertPredictor disabled (default — see C.3 result). Set ECSIE_EXPERT_PREDICTOR=ml or simple to enable.
+[10:08:28.189] [ecsie] [info] Engine: attention cfg: num_heads=16 num_kv_heads=2 head_dim=256 rope_theta=10000000.000000 rope_dim_count=64
+[10:08:36.984] [ecsie] [info] Engine: 40/40 transformer blocks initialised
+[10:08:36.984] [ecsie] [info] Engine: model loaded from "$MODELS_DIR/Models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-Q4_K_M.gguf"
+[measure_tps] batch_size=1 (Phase E if >1)
+[10:08:37.906] [ecsie] [info] Phase F: captured MoE graph for layer 0
+[10:08:38.074] [ecsie] [info] Phase F: captured MoE graph for layer 1
+[10:08:38.241] [ecsie] [info] Phase F: captured MoE graph for layer 2
+[10:08:38.418] [ecsie] [info] Phase F: captured MoE graph for layer 3
+[10:08:38.572] [ecsie] [info] Phase F: captured MoE graph for layer 4
+[10:08:38.711] [ecsie] [info] Phase F: captured MoE graph for layer 5
+[10:08:38.849] [ecsie] [info] Phase F: captured MoE graph for layer 6
+[10:08:38.999] [ecsie] [info] Phase F: captured MoE graph for layer 7
+[10:08:39.153] [ecsie] [info] Phase F: captured MoE graph for layer 8
+[10:08:39.291] [ecsie] [info] Phase F: captured MoE graph for layer 9
+[10:08:39.441] [ecsie] [info] Phase F: captured MoE graph for layer 10
+[10:08:39.583] [ecsie] [info] Phase F: captured MoE graph for layer 11
+[10:08:39.727] [ecsie] [info] Phase F: captured MoE graph for layer 12
+[10:08:39.884] [ecsie] [info] Phase F: captured MoE graph for layer 13
+[10:08:40.025] [ecsie] [info] Phase F: captured MoE graph for layer 14
+[10:08:40.170] [ecsie] [info] Phase F: captured MoE graph for layer 15
+[10:08:40.317] [ecsie] [info] Phase F: captured MoE graph for layer 16
+[10:08:40.447] [ecsie] [info] Phase F: captured MoE graph for layer 17
+[10:08:40.586] [ecsie] [info] Phase F: captured MoE graph for layer 18
+[10:08:40.744] [ecsie] [info] Phase F: captured MoE graph for layer 19
+[10:08:40.886] [ecsie] [info] Phase F: captured MoE graph for layer 20
+[10:08:41.019] [ecsie] [info] Phase F: captured MoE graph for layer 21
+[10:08:41.198] [ecsie] [info] Phase F: captured MoE graph for layer 22
+[10:08:41.347] [ecsie] [info] Phase F: captured MoE graph for layer 23
+[10:08:41.484] [ecsie] [info] Phase F: captured MoE graph for layer 24
+[10:08:41.633] [ecsie] [info] Phase F: captured MoE graph for layer 25
+[10:08:41.785] [ecsie] [info] Phase F: captured MoE graph for layer 26
+[10:08:41.923] [ecsie] [info] Phase F: captured MoE graph for layer 27
+[10:08:42.083] [ecsie] [info] Phase F: captured MoE graph for layer 28
+[10:08:42.215] [ecsie] [info] Phase F: captured MoE graph for layer 29
+[10:08:42.359] [ecsie] [info] Phase F: captured MoE graph for layer 30
+[10:08:42.501] [ecsie] [info] Phase F: captured MoE graph for layer 31
+[10:08:42.641] [ecsie] [info] Phase F: captured MoE graph for layer 32
+[10:08:42.778] [ecsie] [info] Phase F: captured MoE graph for layer 33
+[10:08:42.929] [ecsie] [info] Phase F: captured MoE graph for layer 34
+[10:08:43.091] [ecsie] [info] Phase F: captured MoE graph for layer 35
+[10:08:43.241] [ecsie] [info] Phase F: captured MoE graph for layer 36
+[10:08:43.399] [ecsie] [info] Phase F: captured MoE graph for layer 37
+[10:08:43.561] [ecsie] [info] Phase F: captured MoE graph for layer 38
+[10:08:43.716] [ecsie] [info] Phase F: captured MoE graph for layer 39
+[latency] step=0 (batch=1)  tps=0.51  steps=94  mean_step=1692.901 ms  p99_step=4311.083 ms
+          attn_norm=0.004 ms  attention=0.749 ms  ffn_norm=0.002 ms  moe_dispatch=45.517 ms
+          spec: steps=47 drafted=144 accepted=0 rate=0.000 mean_depth=3.06
+[latency] step=1 (batch=1)  tps=1.50  steps=61  mean_step=557.157 ms  p99_step=1628.171 ms
+          attn_norm=0.024 ms  attention=0.998 ms  ffn_norm=0.027 ms  moe_dispatch=13.021 ms
+          spec: steps=31 drafted=96 accepted=0 rate=0.000 mean_depth=3.10
+[10:12:40.847] [ecsie] [warning] Expert L18 E168: cudaMalloc OOM, falling back to host RAM
+[10:12:41.050] [ecsie] [warning] Expert L25 E111: cudaMalloc OOM, falling back to host RAM
+[10:12:41.105] [ecsie] [warning] Expert L29 E67: cudaMalloc OOM, falling back to host RAM
+[10:12:41.170] [ecsie] [warning] Expert L39 E227: cudaMalloc OOM, falling back to host RAM
+[10:12:41.255] [ecsie] [warning] Expert L6 E32: cudaMalloc OOM, falling back to host RAM
+[10:12:41.303] [ecsie] [warning] Expert L9 E139: cudaMalloc OOM, falling back to host RAM
+[10:12:41.343] [ecsie] [warning] Expert L9 E252: cudaMalloc OOM, falling back to host RAM
+[10:12:41.410] [ecsie] [warning] Expert L15 E17: cudaMalloc OOM, falling back to host RAM
+[10:12:41.471] [ecsie] [warning] Expert L20 E35: cudaMalloc OOM, falling back to host RAM
+[10:12:41.515] [ecsie] [warning] Expert L22 E170: cudaMalloc OOM, falling back to host RAM
+[10:12:41.572] [ecsie] [warning] Expert L25 E179: cudaMalloc OOM, falling back to host RAM
+[10:12:41.626] [ecsie] [warning] Expert L29 E137: cudaMalloc OOM, falling back to host RAM
+[10:12:41.782] [ecsie] [warning] Expert L30 E127: cudaMalloc OOM, falling back to host RAM
+[10:12:41.830] [ecsie] [warning] Expert L31 E118: cudaMalloc OOM, falling back to host RAM
+[10:12:41.910] [ecsie] [warning] Expert L1 E161: cudaMalloc OOM, falling back to host RAM
+[10:12:41.996] [ecsie] [warning] Expert L16 E133: cudaMalloc OOM, falling back to host RAM
+[10:12:42.029] [ecsie] [warning] Expert L17 E36: cudaMalloc OOM, falling back to host RAM
+[10:12:42.167] [ecsie] [warning] Expert L20 E82: cudaMalloc OOM, falling back to host RAM
+[10:12:42.206] [ecsie] [warning] Expert L26 E82: cudaMalloc OOM, falling back to host RAM
+[10:12:42.246] [ecsie] [warning] Expert L32 E60: cudaMalloc OOM, falling back to host RAM
+[10:12:42.300] [ecsie] [warning] Expert L1 E179: cudaMalloc OOM, falling back to host RAM
+[10:12:42.349] [ecsie] [warning] Expert L7 E104: cudaMalloc OOM, falling back to host RAM
+[10:12:42.436] [ecsie] [warning] Expert L21 E114: cudaMalloc OOM, falling back to host RAM
+[10:12:42.554] [ecsie] [warning] Expert L0 E63: cudaMalloc OOM, falling back to host RAM
+[10:12:42.626] [ecsie] [warning] Expert L1 E63: cudaMalloc OOM, falling back to host RAM
+[10:12:42.778] [ecsie] [warning] Expert L28 E254: cudaMalloc OOM, falling back to host RAM
+[10:12:42.949] [ecsie] [warning] Expert L16 E52: cudaMalloc OOM, falling back to host RAM
+[10:12:43.113] [ecsie] [warning] Expert L10 E73: cudaMalloc OOM, falling back to host RAM
+[10:12:43.183] [ecsie] [warning] Expert L17 E3: cudaMalloc OOM, falling back to host RAM
+[10:12:43.244] [ecsie] [warning] Expert L20 E202: cudaMalloc OOM, falling back to host RAM
+[10:12:43.296] [ecsie] [warning] Expert L22 E73: cudaMalloc OOM, falling back to host RAM
+[10:12:43.349] [ecsie] [warning] Expert L23 E94: cudaMalloc OOM, falling back to host RAM
+[10:12:43.397] [ecsie] [warning] Expert L26 E188: cudaMalloc OOM, falling back to host RAM
+[10:12:43.436] [ecsie] [warning] Expert L27 E84: cudaMalloc OOM, falling back to host RAM
+[10:12:43.485] [ecsie] [warning] Expert L27 E101: cudaMalloc OOM, falling back to host RAM
+[10:12:43.537] [ecsie] [warning] Expert L31 E106: cudaMalloc OOM, falling back to host RAM
+[10:12:43.606] [ecsie] [warning] Expert L36 E146: cudaMalloc OOM, falling back to host RAM
+[10:12:43.658] [ecsie] [warning] Expert L36 E160: cudaMalloc OOM, falling back to host RAM
+[10:12:43.708] [ecsie] [warning] Expert L38 E247: cudaMalloc OOM, falling back to host RAM
+[10:12:43.757] [ecsie] [warning] Expert L39 E152: cudaMalloc OOM, falling back to host RAM
+[10:12:43.806] [ecsie] [warning] Expert L39 E147: cudaMalloc OOM, falling back to host RAM
+[10:12:43.873] [ecsie] [warning] Expert L3 E90: cudaMalloc OOM, falling back to host RAM
+[10:12:44.040] [ecsie] [warning] Expert L5 E78: cudaMalloc OOM, falling back to host RAM
+[10:12:44.114] [ecsie] [warning] Expert L18 E181: cudaMalloc OOM, falling back to host RAM
+[10:12:44.185] [ecsie] [warning] Expert L27 E104: cudaMalloc OOM, falling back to host RAM
+[10:12:44.258] [ecsie] [warning] Expert L37 E74: cudaMalloc OOM, falling back to host RAM
+[10:12:44.293] [ecsie] [warning] Expert L37 E80: cudaMalloc OOM, falling back to host RAM
+[10:12:44.344] [ecsie] [warning] Expert L38 E111: cudaMalloc OOM, falling back to host RAM
+[10:12:44.430] [ecsie] [warning] Expert L9 E69: cudaMalloc OOM, falling back to host RAM
+[10:12:44.493] [ecsie] [warning] Expert L19 E252: cudaMalloc OOM, falling back to host RAM
+[10:12:44.545] [ecsie] [warning] Expert L20 E33: cudaMalloc OOM, falling back to host RAM
+[10:12:44.583] [ecsie] [warning] Expert L23 E147: cudaMalloc OOM, falling back to host RAM
+[10:12:44.630] [ecsie] [warning] Expert L26 E40: cudaMalloc OOM, falling back to host RAM
+[10:12:44.665] [ecsie] [warning] Expert L27 E33: cudaMalloc OOM, falling back to host RAM
+[10:12:44.704] [ecsie] [warning] Expert L30 E112: cudaMalloc OOM, falling back to host RAM
+[10:12:44.743] [ecsie] [warning] Expert L30 E115: cudaMalloc OOM, falling back to host RAM
+[10:12:44.784] [ecsie] [warning] Expert L33 E193: cudaMalloc OOM, falling back to host RAM
+[10:12:44.906] [ecsie] [warning] Expert L24 E201: cudaMalloc OOM, falling back to host RAM
+[10:12:44.946] [ecsie] [warning] Expert L31 E214: cudaMalloc OOM, falling back to host RAM
+[10:12:45.000] [ecsie] [warning] Expert L39 E79: cudaMalloc OOM, falling back to host RAM
+[10:12:45.083] [ecsie] [warning] Expert L14 E203: cudaMalloc OOM, falling back to host RAM
+[10:12:45.169] [ecsie] [warning] Expert L32 E37: cudaMalloc OOM, falling back to host RAM
+[10:12:45.221] [ecsie] [warning] Expert L37 E252: cudaMalloc OOM, falling back to host RAM
+[10:12:45.279] [ecsie] [warning] Expert L39 E104: cudaMalloc OOM, falling back to host RAM
+[10:12:45.451] [ecsie] [warning] Expert L4 E40: cudaMalloc OOM, falling back to host RAM
+[10:12:45.513] [ecsie] [warning] Expert L11 E238: cudaMalloc OOM, falling back to host RAM
+[10:12:45.577] [ecsie] [warning] Expert L14 E14: cudaMalloc OOM, falling back to host RAM
+[10:12:45.658] [ecsie] [warning] Expert L28 E179: cudaMalloc OOM, falling back to host RAM
+[10:12:45.825] [ecsie] [warning] Expert L20 E44: cudaMalloc OOM, falling back to host RAM
+[10:12:45.895] [ecsie] [warning] Expert L27 E118: cudaMalloc OOM, falling back to host RAM
+[10:12:45.947] [ecsie] [warning] Expert L31 E128: cudaMalloc OOM, falling back to host RAM
+[10:12:46.018] [ecsie] [warning] Expert L39 E191: cudaMalloc OOM, falling back to host RAM
+[10:12:46.081] [ecsie] [warning] Expert L0 E27: cudaMalloc OOM, falling back to host RAM
+[10:12:46.127] [ecsie] [warning] Expert L1 E235: cudaMalloc OOM, falling back to host RAM
+[10:12:46.210] [ecsie] [warning] Expert L9 E115: cudaMalloc OOM, falling back to host RAM
+[10:12:46.327] [ecsie] [warning] Expert L31 E96: cudaMalloc OOM, falling back to host RAM
+[10:12:46.441] [ecsie] [warning] Expert L14 E95: cudaMalloc OOM, falling back to host RAM
+[10:12:46.546] [ecsie] [warning] Expert L31 E40: cudaMalloc OOM, falling back to host RAM
+[10:12:46.599] [ecsie] [warning] Expert L33 E10: cudaMalloc OOM, falling back to host RAM
+[10:12:46.654] [ecsie] [warning] Expert L39 E89: cudaMalloc OOM, falling back to host RAM
+[10:12:46.727] [ecsie] [warning] Expert L3 E84: cudaMalloc OOM, falling back to host RAM
+[10:12:46.776] [ecsie] [warning] Expert L3 E221: cudaMalloc OOM, falling back to host RAM
+[10:12:46.823] [ecsie] [warning] Expert L4 E82: cudaMalloc OOM, falling back to host RAM
+[10:12:46.871] [ecsie] [warning] Expert L5 E142: cudaMalloc OOM, falling back to host RAM
+[10:12:46.917] [ecsie] [warning] Expert L7 E41: cudaMalloc OOM, falling back to host RAM
+[10:12:46.973] [ecsie] [warning] Expert L8 E12: cudaMalloc OOM, falling back to host RAM
+[10:12:47.027] [ecsie] [warning] Expert L11 E142: cudaMalloc OOM, falling back to host RAM
+[10:12:47.075] [ecsie] [warning] Expert L12 E56: cudaMalloc OOM, falling back to host RAM
+[10:12:47.132] [ecsie] [warning] Expert L17 E215: cudaMalloc OOM, falling back to host RAM
+[10:12:47.169] [ecsie] [warning] Expert L20 E158: cudaMalloc OOM, falling back to host RAM
+[10:12:47.202] [ecsie] [warning] Expert L20 E25: cudaMalloc OOM, falling back to host RAM
+[10:12:47.243] [ecsie] [warning] Expert L22 E47: cudaMalloc OOM, falling back to host RAM
+[10:12:47.340] [ecsie] [warning] Expert L0 E99: cudaMalloc OOM, falling back to host RAM
+[10:12:47.442] [ecsie] [warning] Expert L26 E252: cudaMalloc OOM, falling back to host RAM
+[10:12:47.490] [ecsie] [warning] Expert L31 E18: cudaMalloc OOM, falling back to host RAM
+[10:12:47.650] [ecsie] [warning] Expert L30 E207: cudaMalloc OOM, falling back to host RAM
+[10:12:47.718] [ecsie] [warning] Expert L38 E129: cudaMalloc OOM, falling back to host RAM
+[10:12:47.761] [ecsie] [warning] Expert L39 E11: cudaMalloc OOM, falling back to host RAM
+[10:12:47.801] [ecsie] [warning] Expert L39 E234: cudaMalloc OOM, falling back to host RAM
+[10:12:47.863] [ecsie] [warning] Expert L6 E154: cudaMalloc OOM, falling back to host RAM
+[10:12:47.938] [ecsie] [warning] Expert L18 E113: cudaMalloc OOM, falling back to host RAM
+[10:12:48.064] [ecsie] [warning] Expert L8 E202: cudaMalloc OOM, falling back to host RAM
+[10:12:48.105] [ecsie] [warning] Expert L10 E68: cudaMalloc OOM, falling back to host RAM
+[10:12:48.150] [ecsie] [warning] Expert L13 E240: cudaMalloc OOM, falling back to host RAM
+[10:12:48.206] [ecsie] [warning] Expert L20 E27: cudaMalloc OOM, falling back to host RAM
+[10:12:48.243] [ecsie] [warning] Expert L21 E132: cudaMalloc OOM, falling back to host RAM
+[10:12:49.162] [ecsie] [warning] Expert L27 E65: cudaMalloc OOM, falling back to host RAM
+[10:12:49.240] [ecsie] [warning] Expert L1 E244: cudaMalloc OOM, falling back to host RAM
+[10:12:49.371] [ecsie] [warning] Expert L25 E128: cudaMalloc OOM, falling back to host RAM
+[10:12:49.437] [ecsie] [warning] Expert L33 E89: cudaMalloc OOM, falling back to host RAM
+[10:12:49.488] [ecsie] [warning] Expert L38 E40: cudaMalloc OOM, falling back to host RAM
+[10:12:49.546] [ecsie] [warning] Expert L0 E152: cudaMalloc OOM, falling back to host RAM
+[10:12:49.613] [ecsie] [warning] Expert L8 E20: cudaMalloc OOM, falling back to host RAM
+[10:12:49.663] [ecsie] [warning] Expert L11 E71: cudaMalloc OOM, falling back to host RAM
+[10:12:49.704] [ecsie] [warning] Expert L12 E97: cudaMalloc OOM, falling back to host RAM
+[10:12:49.749] [ecsie] [warning] Expert L13 E214: cudaMalloc OOM, falling back to host RAM
+[10:12:50.046] [ecsie] [warning] Expert L20 E5: cudaMalloc OOM, falling back to host RAM
+[10:12:50.181] [ecsie] [warning] Expert L6 E51: cudaMalloc OOM, falling back to host RAM
+[10:12:50.241] [ecsie] [warning] Expert L12 E238: cudaMalloc OOM, falling back to host RAM
+[10:12:50.314] [ecsie] [warning] Expert L28 E165: cudaMalloc OOM, falling back to host RAM
+[10:12:50.343] [ecsie] [warning] Expert L30 E202: cudaMalloc OOM, falling back to host RAM
+[10:12:50.422] [ecsie] [warning] Expert L3 E64: cudaMalloc OOM, falling back to host RAM
+[10:12:50.466] [ecsie] [warning] Expert L6 E216: cudaMalloc OOM, falling back to host RAM
+[10:12:50.560] [ecsie] [warning] Expert L22 E24: cudaMalloc OOM, falling back to host RAM
+[10:12:50.622] [ecsie] [warning] Expert L29 E65: cudaMalloc OOM, falling back to host RAM
+[10:12:50.656] [ecsie] [warning] Expert L29 E207: cudaMalloc OOM, falling back to host RAM
+[10:12:50.707] [ecsie] [warning] Expert L33 E179: cudaMalloc OOM, falling back to host RAM
+[10:12:50.814] [ecsie] [warning] Expert L14 E251: cudaMalloc OOM, falling back to host RAM
+[10:12:50.862] [ecsie] [warning] Expert L16 E123: cudaMalloc OOM, falling back to host RAM
+[10:12:50.906] [ecsie] [warning] Expert L16 E61: cudaMalloc OOM, falling back to host RAM
+[10:12:50.958] [ecsie] [warning] Expert L19 E200: cudaMalloc OOM, falling back to host RAM
+[10:12:51.007] [ecsie] [warning] Expert L22 E89: cudaMalloc OOM, falling back to host RAM
+[10:12:51.100] [ecsie] [warning] Expert L31 E25: cudaMalloc OOM, falling back to host RAM
+[10:12:51.220] [ecsie] [warning] Expert L17 E101: cudaMalloc OOM, falling back to host RAM
+[10:12:51.283] [ecsie] [warning] Expert L19 E71: cudaMalloc OOM, falling back to host RAM
+[10:12:51.346] [ecsie] [warning] Expert L23 E248: cudaMalloc OOM, falling back to host RAM
+[10:12:51.511] [ecsie] [warning] Expert L10 E20: cudaMalloc OOM, falling back to host RAM
+[10:12:51.569] [ecsie] [warning] Expert L10 E138: cudaMalloc OOM, falling back to host RAM
+[10:12:51.650] [ecsie] [warning] Expert L17 E26: cudaMalloc OOM, falling back to host RAM
+[10:12:51.727] [ecsie] [warning] Expert L22 E138: cudaMalloc OOM, falling back to host RAM
+[10:12:51.790] [ecsie] [warning] Expert L23 E56: cudaMalloc OOM, falling back to host RAM
+[10:12:51.859] [ecsie] [warning] Expert L26 E114: cudaMalloc OOM, falling back to host RAM
+[10:12:51.945] [ecsie] [warning] Expert L32 E208: cudaMalloc OOM, falling back to host RAM
+[10:12:52.022] [ecsie] [warning] Expert L1 E144: cudaMalloc OOM, falling back to host RAM
+[10:12:52.107] [ecsie] [warning] Expert L11 E109: cudaMalloc OOM, falling back to host RAM
+[10:12:52.159] [ecsie] [warning] Expert L12 E46: cudaMalloc OOM, falling back to host RAM
+[10:12:52.207] [ecsie] [warning] Expert L15 E128: cudaMalloc OOM, falling back to host RAM
+[10:12:52.283] [ecsie] [warning] Expert L27 E10: cudaMalloc OOM, falling back to host RAM
+[10:12:52.412] [ecsie] [warning] Expert L10 E194: cudaMalloc OOM, falling back to host RAM
+[10:12:52.457] [ecsie] [warning] Expert L13 E118: cudaMalloc OOM, falling back to host RAM
+[10:12:52.491] [ecsie] [warning] Expert L13 E203: cudaMalloc OOM, falling back to host RAM
+[10:12:52.617] [ecsie] [warning] Expert L1 E237: cudaMalloc OOM, falling back to host RAM
+[10:12:52.659] [ecsie] [warning] Expert L3 E179: cudaMalloc OOM, falling back to host RAM
+[10:12:52.745] [ecsie] [warning] Expert L25 E29: cudaMalloc OOM, falling back to host RAM
+[10:12:52.815] [ecsie] [warning] Expert L38 E229: cudaMalloc OOM, falling back to host RAM
+[10:12:52.843] [ecsie] [warning] Expert L39 E124: cudaMalloc OOM, falling back to host RAM
+[10:12:52.877] [ecsie] [warning] Expert L0 E183: cudaMalloc OOM, falling back to host RAM
+[10:12:52.948] [ecsie] [warning] Expert L16 E22: cudaMalloc OOM, falling back to host RAM
+[10:12:53.001] [ecsie] [warning] Expert L22 E218: cudaMalloc OOM, falling back to host RAM
+[10:12:53.040] [ecsie] [warning] Expert L27 E116: cudaMalloc OOM, falling back to host RAM
+[10:12:53.077] [ecsie] [warning] Expert L28 E20: cudaMalloc OOM, falling back to host RAM
+[10:12:53.125] [ecsie] [warning] Expert L30 E221: cudaMalloc OOM, falling back to host RAM
+[10:12:53.215] [ecsie] [warning] Expert L0 E82: cudaMalloc OOM, falling back to host RAM
+[10:12:53.271] [ecsie] [warning] Expert L9 E237: cudaMalloc OOM, falling back to host RAM
+[10:12:53.328] [ecsie] [warning] Expert L15 E101: cudaMalloc OOM, falling back to host RAM
+[10:12:53.389] [ecsie] [warning] Expert L23 E123: cudaMalloc OOM, falling back to host RAM
+[10:12:53.441] [ecsie] [warning] Expert L27 E199: cudaMalloc OOM, falling back to host RAM
+[10:12:53.519] [ecsie] [warning] Expert L0 E147: cudaMalloc OOM, falling back to host RAM
+[10:12:53.606] [ecsie] [warning] Expert L12 E248: cudaMalloc OOM, falling back to host RAM
+[10:12:53.646] [ecsie] [warning] Expert L13 E250: cudaMalloc OOM, falling back to host RAM
+[10:12:53.711] [ecsie] [warning] Expert L22 E12: cudaMalloc OOM, falling back to host RAM
+[10:12:53.810] [ecsie] [warning] Expert L0 E125: cudaMalloc OOM, falling back to host RAM
+[10:12:53.935] [ecsie] [warning] Expert L35 E128: cudaMalloc OOM, falling back to host RAM
+[10:12:54.101] [ecsie] [warning] Expert L33 E35: cudaMalloc OOM, falling back to host RAM
+[10:12:54.157] [ecsie] [warning] Expert L37 E12: cudaMalloc OOM, falling back to host RAM
+[10:12:54.240] [ecsie] [warning] Expert L7 E31: cudaMalloc OOM, falling back to host RAM
+[10:12:54.333] [ecsie] [warning] Expert L25 E226: cudaMalloc OOM, falling back to host RAM
+[10:12:54.388] [ecsie] [warning] Expert L25 E153: cudaMalloc OOM, falling back to host RAM
+[10:12:54.446] [ecsie] [warning] Expert L28 E100: cudaMalloc OOM, falling back to host RAM
+[10:12:54.543] [ecsie] [warning] Expert L6 E147: cudaMalloc OOM, falling back to host RAM
+[10:12:54.640] [ecsie] [warning] Expert L29 E240: cudaMalloc OOM, falling back to host RAM
+[10:12:54.670] [ecsie] [warning] Expert L30 E238: cudaMalloc OOM, falling back to host RAM
+[10:12:54.693] [ecsie] [warning] Expert L31 E146: cudaMalloc OOM, falling back to host RAM
+[10:12:54.726] [ecsie] [warning] Expert L35 E20: cudaMalloc OOM, falling back to host RAM
+[10:12:54.752] [ecsie] [warning] Expert L35 E236: cudaMalloc OOM, falling back to host RAM
+[10:12:54.795] [ecsie] [warning] Expert L38 E157: cudaMalloc OOM, falling back to host RAM
+[10:12:54.859] [ecsie] [warning] Expert L5 E240: cudaMalloc OOM, falling back to host RAM
+[10:12:55.008] [ecsie] [warning] Expert L39 E91: cudaMalloc OOM, falling back to host RAM
+[10:12:55.116] [ecsie] [warning] Expert L16 E132: cudaMalloc OOM, falling back to host RAM
+[10:12:55.199] [ecsie] [warning] Expert L24 E57: cudaMalloc OOM, falling back to host RAM
+[10:12:55.279] [ecsie] [warning] Expert L35 E199: cudaMalloc OOM, falling back to host RAM
+[10:12:55.327] [ecsie] [warning] Expert L38 E159: cudaMalloc OOM, falling back to host RAM
+[10:12:55.445] [ecsie] [warning] Expert L19 E225: cudaMalloc OOM, falling back to host RAM
+[10:12:55.521] [ecsie] [warning] Expert L28 E137: cudaMalloc OOM, falling back to host RAM
+[10:12:55.613] [ecsie] [warning] Expert L0 E197: cudaMalloc OOM, falling back to host RAM
+[10:12:55.654] [ecsie] [warning] Expert L0 E166: cudaMalloc OOM, falling back to host RAM
+[10:12:55.787] [ecsie] [warning] Expert L32 E148: cudaMalloc OOM, falling back to host RAM
+[10:12:55.886] [ecsie] [warning] Expert L9 E254: cudaMalloc OOM, falling back to host RAM
+[10:12:55.930] [ecsie] [warning] Expert L12 E12: cudaMalloc OOM, falling back to host RAM
+[10:12:56.116] [ecsie] [warning] Expert L13 E204: cudaMalloc OOM, falling back to host RAM
+[10:12:56.265] [ecsie] [warning] Expert L11 E26: cudaMalloc OOM, falling back to host RAM
+[10:12:56.423] [ecsie] [warning] Expert L16 E1: cudaMalloc OOM, falling back to host RAM
+[10:12:56.489] [ecsie] [warning] Expert L24 E123: cudaMalloc OOM, falling back to host RAM
+[10:12:56.583] [ecsie] [warning] Expert L0 E81: cudaMalloc OOM, falling back to host RAM
+[10:12:56.728] [ecsie] [warning] Expert L34 E50: cudaMalloc OOM, falling back to host RAM
+[10:12:56.798] [ecsie] [warning] Expert L0 E235: cudaMalloc OOM, falling back to host RAM
+[10:12:56.895] [ecsie] [warning] Expert L20 E186: cudaMalloc OOM, falling back to host RAM
+[10:12:56.952] [ecsie] [warning] Expert L23 E207: cudaMalloc OOM, falling back to host RAM
+[10:12:57.092] [ecsie] [warning] Expert L8 E229: cudaMalloc OOM, falling back to host RAM
+[10:12:57.180] [ecsie] [warning] Expert L16 E128: cudaMalloc OOM, falling back to host RAM
+[10:12:57.282] [ecsie] [warning] Expert L18 E143: cudaMalloc OOM, falling back to host RAM
+[10:12:57.387] [ecsie] [warning] Expert L30 E55: cudaMalloc OOM, falling back to host RAM
+[10:12:57.637] [ecsie] [warning] Expert L18 E106: cudaMalloc OOM, falling back to host RAM
+[10:12:57.675] [ecsie] [warning] Expert L20 E201: cudaMalloc OOM, falling back to host RAM
+[10:12:57.721] [ecsie] [warning] Expert L23 E182: cudaMalloc OOM, falling back to host RAM
+[10:12:57.789] [ecsie] [warning] Expert L32 E176: cudaMalloc OOM, falling back to host RAM
+[10:12:57.905] [ecsie] [warning] Expert L16 E6: cudaMalloc OOM, falling back to host RAM
+[10:12:58.008] [ecsie] [warning] Expert L35 E137: cudaMalloc OOM, falling back to host RAM
+[10:12:58.066] [ecsie] [warning] Expert L39 E41: cudaMalloc OOM, falling back to host RAM
+[10:12:58.195] [ecsie] [warning] Expert L23 E8: cudaMalloc OOM, falling back to host RAM
+[10:12:58.242] [ecsie] [warning] Expert L26 E108: cudaMalloc OOM, falling back to host RAM
+[10:12:58.334] [ecsie] [warning] Expert L38 E188: cudaMalloc OOM, falling back to host RAM
+[10:12:58.418] [ecsie] [warning] Expert L9 E39: cudaMalloc OOM, falling back to host RAM
+[10:12:58.528] [ecsie] [warning] Expert L35 E232: cudaMalloc OOM, falling back to host RAM
+[10:12:58.582] [ecsie] [warning] Expert L38 E50: cudaMalloc OOM, falling back to host RAM
+[10:12:58.652] [ecsie] [warning] Expert L0 E139: cudaMalloc OOM, falling back to host RAM
+[10:12:58.723] [ecsie] [warning] Expert L8 E113: cudaMalloc OOM, falling back to host RAM
+[10:12:58.804] [ecsie] [warning] Expert L24 E248: cudaMalloc OOM, falling back to host RAM
+[10:12:58.855] [ecsie] [warning] Expert L29 E185: cudaMalloc OOM, falling back to host RAM
+[10:12:58.887] [ecsie] [warning] Expert L30 E214: cudaMalloc OOM, falling back to host RAM
+[10:12:58.949] [ecsie] [warning] Expert L38 E170: cudaMalloc OOM, falling back to host RAM
+[10:12:59.054] [ecsie] [warning] Expert L15 E226: cudaMalloc OOM, falling back to host RAM
+[10:12:59.139] [ecsie] [warning] Expert L34 E224: cudaMalloc OOM, falling back to host RAM
+[10:12:59.186] [ecsie] [warning] Expert L38 E33: cudaMalloc OOM, falling back to host RAM
+[10:12:59.251] [ecsie] [warning] Expert L4 E29: cudaMalloc OOM, falling back to host RAM
+[10:12:59.435] [ecsie] [warning] Expert L10 E154: cudaMalloc OOM, falling back to host RAM
+[10:12:59.520] [ecsie] [warning] Expert L29 E3: cudaMalloc OOM, falling back to host RAM
+[10:12:59.702] [ecsie] [warning] Expert L28 E17: cudaMalloc OOM, falling back to host RAM
+[10:12:59.922] [ecsie] [warning] Expert L33 E137: cudaMalloc OOM, falling back to host RAM
+[10:12:59.955] [ecsie] [warning] Expert L33 E112: cudaMalloc OOM, falling back to host RAM
+[10:13:00.257] [ecsie] [warning] Expert L28 E204: cudaMalloc OOM, falling back to host RAM
+[10:13:00.422] [ecsie] [warning] Expert L30 E72: cudaMalloc OOM, falling back to host RAM
+[10:13:00.469] [ecsie] [warning] Expert L31 E237: cudaMalloc OOM, falling back to host RAM
+[10:13:00.518] [ecsie] [warning] Expert L32 E138: cudaMalloc OOM, falling back to host RAM
+[10:13:00.565] [ecsie] [warning] Expert L33 E201: cudaMalloc OOM, falling back to host RAM
+[10:13:00.622] [ecsie] [warning] Expert L38 E218: cudaMalloc OOM, falling back to host RAM
+[10:13:00.670] [ecsie] [warning] Expert L39 E249: cudaMalloc OOM, falling back to host RAM
+[10:13:00.761] [ecsie] [warning] Expert L12 E33: cudaMalloc OOM, falling back to host RAM
+[10:13:00.871] [ecsie] [warning] Expert L33 E63: cudaMalloc OOM, falling back to host RAM
+[10:13:00.916] [ecsie] [warning] Expert L33 E105: cudaMalloc OOM, falling back to host RAM
+[latency] step=2 (batch=1)  tps=3.00  steps=90  mean_step=311.521 ms  p99_step=1184.882 ms
+          attn_norm=0.003 ms  attention=0.466 ms  ffn_norm=0.002 ms  moe_dispatch=6.132 ms
+          spec: steps=47 drafted=144 accepted=0 rate=0.000 mean_depth=3.06
+[10:13:01.675] [ecsie] [warning] Expert L2 E192: cudaMalloc OOM, falling back to host RAM
+[10:13:01.774] [ecsie] [warning] Expert L12 E36: cudaMalloc OOM, falling back to host RAM
+[10:13:01.899] [ecsie] [warning] Expert L4 E202: cudaMalloc OOM, falling back to host RAM
+[10:13:02.029] [ecsie] [warning] Expert L30 E33: cudaMalloc OOM, falling back to host RAM
+[10:13:02.068] [ecsie] [warning] Expert L31 E225: cudaMalloc OOM, falling back to host RAM
+[10:13:02.218] [ecsie] [warning] Expert L35 E221: cudaMalloc OOM, falling back to host RAM
+[10:13:02.409] [ecsie] [warning] Expert L3 E150: cudaMalloc OOM, falling back to host RAM
+[10:13:02.598] [ecsie] [warning] Expert L3 E104: cudaMalloc OOM, falling back to host RAM
+[10:13:02.643] [ecsie] [warning] Expert L7 E97: cudaMalloc OOM, falling back to host RAM
+[10:13:02.816] [ecsie] [warning] Expert L19 E146: cudaMalloc OOM, falling back to host RAM
+[10:13:02.896] [ecsie] [warning] Expert L32 E203: cudaMalloc OOM, falling back to host RAM
+[10:13:02.939] [ecsie] [warning] Expert L34 E160: cudaMalloc OOM, falling back to host RAM
+[10:13:02.979] [ecsie] [warning] Expert L38 E233: cudaMalloc OOM, falling back to host RAM
+[10:13:03.058] [ecsie] [warning] Expert L7 E151: cudaMalloc OOM, falling back to host RAM
+[10:13:03.115] [ecsie] [warning] Expert L12 E25: cudaMalloc OOM, falling back to host RAM
+[10:13:03.179] [ecsie] [warning] Expert L18 E45: cudaMalloc OOM, falling back to host RAM
+[10:13:03.231] [ecsie] [warning] Expert L22 E131: cudaMalloc OOM, falling back to host RAM
+[10:13:03.438] [ecsie] [warning] Expert L30 E231: cudaMalloc OOM, falling back to host RAM
+[10:13:03.498] [ecsie] [warning] Expert L37 E225: cudaMalloc OOM, falling back to host RAM
+[10:13:03.544] [ecsie] [warning] Expert L39 E14: cudaMalloc OOM, falling back to host RAM
+[10:13:03.604] [ecsie] [warning] Expert L1 E197: cudaMalloc OOM, falling back to host RAM
+[10:13:03.649] [ecsie] [warning] Expert L2 E116: cudaMalloc OOM, falling back to host RAM
+[10:13:03.786] [ecsie] [warning] Expert L32 E49: cudaMalloc OOM, falling back to host RAM
+[10:13:03.901] [ecsie] [warning] Expert L15 E116: cudaMalloc OOM, falling back to host RAM
+[10:13:03.994] [ecsie] [warning] Expert L34 E230: cudaMalloc OOM, falling back to host RAM
+[10:13:04.085] [ecsie] [warning] Expert L8 E247: cudaMalloc OOM, falling back to host RAM
+[10:13:04.226] [ecsie] [warning] Expert L33 E116: cudaMalloc OOM, falling back to host RAM
+[10:13:04.276] [ecsie] [warning] Expert L35 E201: cudaMalloc OOM, falling back to host RAM
+[10:13:04.332] [ecsie] [warning] Expert L38 E212: cudaMalloc OOM, falling back to host RAM
+[10:13:04.391] [ecsie] [warning] Expert L1 E132: cudaMalloc OOM, falling back to host RAM
+[10:13:04.477] [ecsie] [warning] Expert L9 E250: cudaMalloc OOM, falling back to host RAM
+[10:13:04.633] [ecsie] [warning] Expert L3 E185: cudaMalloc OOM, falling back to host RAM
+[10:13:04.764] [ecsie] [warning] Expert L29 E114: cudaMalloc OOM, falling back to host RAM
+[10:13:04.814] [ecsie] [warning] Expert L32 E21: cudaMalloc OOM, falling back to host RAM
+[10:13:05.017] [ecsie] [warning] Expert L3 E91: cudaMalloc OOM, falling back to host RAM
+[10:13:05.292] [ecsie] [warning] Expert L25 E50: cudaMalloc OOM, falling back to host RAM
+[10:13:05.375] [ecsie] [warning] Expert L31 E16: cudaMalloc OOM, falling back to host RAM
+[10:13:05.447] [ecsie] [warning] Expert L33 E248: cudaMalloc OOM, falling back to host RAM
+[10:13:05.537] [ecsie] [warning] Expert L0 E134: cudaMalloc OOM, falling back to host RAM
+[10:13:05.609] [ecsie] [warning] Expert L6 E19: cudaMalloc OOM, falling back to host RAM
+[10:13:05.744] [ecsie] [warning] Expert L36 E80: cudaMalloc OOM, falling back to host RAM
+[10:13:05.830] [ecsie] [warning] Expert L10 E148: cudaMalloc OOM, falling back to host RAM
+[10:13:05.961] [ecsie] [warning] Expert L38 E228: cudaMalloc OOM, falling back to host RAM
+[10:13:06.061] [ecsie] [warning] Expert L17 E216: cudaMalloc OOM, falling back to host RAM
+[10:13:06.126] [ecsie] [warning] Expert L25 E223: cudaMalloc OOM, falling back to host RAM
+[10:13:06.173] [ecsie] [warning] Expert L29 E217: cudaMalloc OOM, falling back to host RAM
+[10:13:06.268] [ecsie] [warning] Expert L5 E252: cudaMalloc OOM, falling back to host RAM
+[10:13:06.312] [ecsie] [warning] Expert L10 E89: cudaMalloc OOM, falling back to host RAM
+[10:13:06.346] [ecsie] [warning] Expert L10 E74: cudaMalloc OOM, falling back to host RAM
+[10:13:06.504] [ecsie] [warning] Expert L10 E110: cudaMalloc OOM, falling back to host RAM
+[10:13:06.548] [ecsie] [warning] Expert L11 E11: cudaMalloc OOM, falling back to host RAM
+[10:13:06.637] [ecsie] [warning] Expert L26 E233: cudaMalloc OOM, falling back to host RAM
+[10:13:06.747] [ecsie] [warning] Expert L8 E185: cudaMalloc OOM, falling back to host RAM
+[10:13:06.803] [ecsie] [warning] Expert L14 E240: cudaMalloc OOM, falling back to host RAM
+[10:13:06.850] [ecsie] [warning] Expert L16 E254: cudaMalloc OOM, falling back to host RAM
+[10:13:07.034] [ecsie] [warning] Expert L25 E40: cudaMalloc OOM, falling back to host RAM
+[10:13:07.140] [ecsie] [warning] Expert L0 E100: cudaMalloc OOM, falling back to host RAM
+[10:13:07.248] [ecsie] [warning] Expert L25 E118: cudaMalloc OOM, falling back to host RAM
+[10:13:07.463] [ecsie] [warning] Expert L37 E102: cudaMalloc OOM, falling back to host RAM
+[10:13:07.539] [ecsie] [warning] Expert L9 E241: cudaMalloc OOM, falling back to host RAM
+[10:13:07.615] [ecsie] [warning] Expert L29 E52: cudaMalloc OOM, falling back to host RAM
+[10:13:07.904] [ecsie] [warning] Expert L39 E163: cudaMalloc OOM, falling back to host RAM
+[10:13:08.077] [ecsie] [warning] Expert L0 E181: cudaMalloc OOM, falling back to host RAM
+[10:13:08.224] [ecsie] [warning] Expert L37 E94: cudaMalloc OOM, falling back to host RAM
+[10:13:08.281] [ecsie] [warning] Expert L0 E168: cudaMalloc OOM, falling back to host RAM
+[10:13:08.345] [ecsie] [warning] Expert L5 E117: cudaMalloc OOM, falling back to host RAM
+[10:13:08.475] [ecsie] [warning] Expert L39 E148: cudaMalloc OOM, falling back to host RAM
+[10:13:08.512] [ecsie] [warning] Expert L39 E159: cudaMalloc OOM, falling back to host RAM
+[10:13:08.584] [ecsie] [warning] Expert L9 E2: cudaMalloc OOM, falling back to host RAM
+[10:13:08.646] [ecsie] [warning] Expert L20 E112: cudaMalloc OOM, falling back to host RAM
+[10:13:08.717] [ecsie] [warning] Expert L33 E3: cudaMalloc OOM, falling back to host RAM
+[10:13:08.973] [ecsie] [warning] Expert L19 E199: cudaMalloc OOM, falling back to host RAM
+[10:13:09.337] [ecsie] [warning] Expert L32 E183: cudaMalloc OOM, falling back to host RAM
+[10:13:09.375] [ecsie] [warning] Expert L34 E10: cudaMalloc OOM, falling back to host RAM
+[10:13:09.435] [ecsie] [warning] Expert L39 E20: cudaMalloc OOM, falling back to host RAM
+[10:13:09.581] [ecsie] [warning] Expert L33 E177: cudaMalloc OOM, falling back to host RAM
+[10:13:10.054] [ecsie] [warning] Expert L16 E204: cudaMalloc OOM, falling back to host RAM
+[10:13:10.114] [ecsie] [warning] Expert L20 E9: cudaMalloc OOM, falling back to host RAM
+[10:13:10.304] [ecsie] [warning] Expert L30 E159: cudaMalloc OOM, falling back to host RAM
+[10:13:10.373] [ecsie] [warning] Expert L0 E112: cudaMalloc OOM, falling back to host RAM
+[10:13:10.402] [ecsie] [warning] Expert L0 E208: cudaMalloc OOM, falling back to host RAM
+[10:13:10.482] [ecsie] [warning] Expert L18 E7: cudaMalloc OOM, falling back to host RAM
+[10:13:10.690] [ecsie] [warning] Expert L28 E71: cudaMalloc OOM, falling back to host RAM
+[10:13:10.765] [ecsie] [warning] Expert L0 E187: cudaMalloc OOM, falling back to host RAM
+[10:13:10.969] [ecsie] [warning] Expert L15 E185: cudaMalloc OOM, falling back to host RAM
+[10:13:11.038] [ecsie] [warning] Expert L23 E199: cudaMalloc OOM, falling back to host RAM
+[10:13:11.087] [ecsie] [warning] Expert L29 E109: cudaMalloc OOM, falling back to host RAM
+[10:13:11.219] [ecsie] [warning] Expert L20 E100: cudaMalloc OOM, falling back to host RAM
+[10:13:11.464] [ecsie] [warning] Expert L5 E81: cudaMalloc OOM, falling back to host RAM
+[10:13:11.593] [ecsie] [warning] Expert L23 E109: cudaMalloc OOM, falling back to host RAM
+[10:13:11.641] [ecsie] [warning] Expert L27 E203: cudaMalloc OOM, falling back to host RAM
+[10:13:11.694] [ecsie] [warning] Expert L29 E216: cudaMalloc OOM, falling back to host RAM
+[10:13:11.891] [ecsie] [warning] Expert L33 E209: cudaMalloc OOM, falling back to host RAM
+[10:13:11.944] [ecsie] [warning] Expert L34 E77: cudaMalloc OOM, falling back to host RAM
+[10:13:11.995] [ecsie] [warning] Expert L36 E85: cudaMalloc OOM, falling back to host RAM
+[10:13:12.079] [ecsie] [warning] Expert L7 E95: cudaMalloc OOM, falling back to host RAM
+[10:13:12.375] [ecsie] [warning] Expert L0 E165: cudaMalloc OOM, falling back to host RAM
+[10:13:12.847] [ecsie] [warning] Expert L3 E0: cudaMalloc OOM, falling back to host RAM
+[10:13:12.933] [ecsie] [warning] Expert L18 E72: cudaMalloc OOM, falling back to host RAM
+[10:13:13.006] [ecsie] [warning] Expert L25 E42: cudaMalloc OOM, falling back to host RAM
+[10:13:13.315] [ecsie] [warning] Expert L23 E247: cudaMalloc OOM, falling back to host RAM
+[10:13:13.757] [ecsie] [warning] Expert L14 E89: cudaMalloc OOM, falling back to host RAM
+[10:13:13.811] [ecsie] [warning] Expert L19 E155: cudaMalloc OOM, falling back to host RAM
+[10:13:14.057] [ecsie] [warning] Expert L0 E71: cudaMalloc OOM, falling back to host RAM
+[10:13:14.437] [ecsie] [warning] Expert L29 E213: cudaMalloc OOM, falling back to host RAM
+[10:13:14.496] [ecsie] [warning] Expert L34 E172: cudaMalloc OOM, falling back to host RAM
+[10:13:14.703] [ecsie] [warning] Expert L38 E205: cudaMalloc OOM, falling back to host RAM
+[10:13:14.907] [ecsie] [warning] Expert L5 E31: cudaMalloc OOM, falling back to host RAM
+[10:13:14.999] [ecsie] [warning] Expert L19 E136: cudaMalloc OOM, falling back to host RAM
+[10:13:15.476] [ecsie] [warning] Expert L24 E150: cudaMalloc OOM, falling back to host RAM
+[10:13:15.908] [ecsie] [warning] Expert L13 E124: cudaMalloc OOM, falling back to host RAM
+[10:13:15.966] [ecsie] [warning] Expert L15 E245: cudaMalloc OOM, falling back to host RAM
+[10:13:16.060] [ecsie] [warning] Expert L29 E110: cudaMalloc OOM, falling back to host RAM
+[10:13:16.254] [ecsie] [warning] Expert L32 E97: cudaMalloc OOM, falling back to host RAM
+[10:13:16.420] [ecsie] [warning] Expert L22 E220: cudaMalloc OOM, falling back to host RAM
+[10:13:16.514] [ecsie] [warning] Expert L32 E210: cudaMalloc OOM, falling back to host RAM
+[10:13:16.644] [ecsie] [warning] Expert L21 E117: cudaMalloc OOM, falling back to host RAM
+[10:13:17.491] [ecsie] [warning] Expert L0 E154: cudaMalloc OOM, falling back to host RAM
+[10:13:17.814] [ecsie] [warning] Expert L26 E15: cudaMalloc OOM, falling back to host RAM
+[10:13:17.947] [ecsie] [warning] Expert L10 E180: cudaMalloc OOM, falling back to host RAM
+[latency] step=3 (batch=1)  tps=4.90  steps=84  mean_step=183.662 ms  p99_step=338.627 ms
+          attn_norm=0.003 ms  attention=0.461 ms  ffn_norm=0.002 ms  moe_dispatch=2.869 ms
+          spec: steps=53 drafted=162 accepted=0 rate=0.000 mean_depth=3.06
+[measure_tps] wrote 4 rows

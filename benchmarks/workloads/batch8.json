@@ -1,0 +1,41 @@
+{
+ "name": "batch8",
+ "description": "8 chat-templated coding prompts",
+ "batch_size": 8,
+ "repetitions": 1,
+ "temperature": 0.0,
+ "prompts": [
+  {
+   "text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a Python function to check if a string is a palindrome, ignoring case and spaces.<|im_end|>\n<|im_start|>assistant\n",
+   "max_tokens": 64
+  },
+  {
+   "text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a Python function that returns the nth Fibonacci number using memoization.<|im_end|>\n<|im_start|>assistant\n",
+   "max_tokens": 64
+  },
+  {
+   "text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nImplement binary search over a sorted list in Python. Include a docstring.<|im_end|>\n<|im_start|>assistant\n",
+   "max_tokens": 64
+  },
+  {
+   "text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a Python function to flatten a nested list of arbitrary depth.<|im_end|>\n<|im_start|>assistant\n",
+   "max_tokens": 64
+  },
+  {
+   "text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nImplement quicksort in Python with an in-place partition.<|im_end|>\n<|im_start|>assistant\n",
+   "max_tokens": 64
+  },
+  {
+   "text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a Python decorator that times how long a function takes to run.<|im_end|>\n<|im_start|>assistant\n",
+   "max_tokens": 64
+  },
+  {
+   "text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a Python function to count word frequencies in a paragraph, returning a dict.<|im_end|>\n<|im_start|>assistant\n",
+   "max_tokens": 64
+  },
+  {
+   "text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nImplement a simple stack class in Python with push, pop, peek, and is_empty.<|im_end|>\n<|im_start|>assistant\n",
+   "max_tokens": 64
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "mixed",
+  "description": "Mixed prompt lengths and output distributions. Represents a realistic production workload.",
+  "prompts": [
+    { "text": "What is 2+2?", "max_tokens": 8 },
+    { "text": "Write a 500-word essay on the importance of open-source software.", "max_tokens": 600 },
+    { "text": "Translate the following to French: 'The quick brown fox jumps over the lazy dog.'", "max_tokens": 64 },
+    { "text": "Given this Python code, identify any bugs:\n```python\ndef fib(n):\n    if n == 0: return 1\n    return fib(n-1) + fib(n-2)\n```", "max_tokens": 256 },
+    { "text": "List the top 10 largest countries by area.", "max_tokens": 200 },
+    { "text": "What are the main differences between supervised and unsupervised learning?", "max_tokens": 300 }
+  ],
+  "batch_size": 4,
+  "repetitions": 8,
+  "temperature": 1.0,
+  "seed": 42
+}

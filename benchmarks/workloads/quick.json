@@ -1,0 +1,9 @@
+{
+  "description": "Quick TPS smoke test — short prompts, 3 repetitions, ~120 tokens total",
+  "repetitions": 3,
+  "temperature": 1.0,
+  "prompts": [
+    { "text": "What is 2+2?",                      "max_tokens": 8  },
+    { "text": "Name the planets in our solar system.", "max_tokens": 32 }
+  ]
+}

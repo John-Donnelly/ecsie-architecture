@@ -1,0 +1,12 @@
+{
+  "name": "tiny_rerun",
+  "description": "Fast sanity benchmark for iterative optimization runs.",
+  "prompts": [
+    { "text": "What is 2+2?", "max_tokens": 8 },
+    { "text": "List three colors.", "max_tokens": 8 }
+  ],
+  "batch_size": 2,
+  "repetitions": 1,
+  "temperature": 0.7,
+  "seed": 42
+}

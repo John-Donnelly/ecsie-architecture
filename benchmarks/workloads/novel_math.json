@@ -1,0 +1,8 @@
+{
+  "temperature": 0.0,
+  "repetitions": 1,
+  "batch_size": 1,
+  "prompts": [
+    { "text": "A cafe orders 18 kg of coffee beans at $14.50 per kg and pays a flat $25 delivery fee. They brew 11 grams of beans per cup and sell each cup for $3.75. If they sell every cup they can brew, what is their total profit? Show each step of your calculation.", "max_tokens": 200 }
+  ]
+}

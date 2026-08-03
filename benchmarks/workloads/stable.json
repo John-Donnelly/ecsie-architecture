@@ -1,0 +1,15 @@
+{
+  "name": "stable",
+  "description": "Low-variance prompts with consistent output length. Designed to stress-test steady-state throughput.",
+  "prompts": [
+    { "text": "Explain the theory of general relativity in three paragraphs.", "max_tokens": 256 },
+    { "text": "What is the capital of France?", "max_tokens": 32 },
+    { "text": "Write a Python function to compute the Fibonacci sequence.", "max_tokens": 128 },
+    { "text": "Summarise the key ideas in the Turing Award lecture by Yoshua Bengio.", "max_tokens": 200 },
+    { "text": "Describe the water cycle in simple terms.", "max_tokens": 150 }
+  ],
+  "batch_size": 8,
+  "repetitions": 10,
+  "temperature": 0.7,
+  "seed": 42
+}

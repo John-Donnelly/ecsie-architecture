@@ -1,0 +1,22 @@
+[19:50:23.039] [ecsie] [info] Engine: RamPool allocated (6144 MB, ~50% of available RAM)
+[19:50:23.054] [ecsie] [info] Engine: VramPool allocated (2479 MB, adaptive)
+[19:50:23.054] [ecsie] [info] Engine: embedding table loaded (248320 tokens, 2048 hidden)
+[19:50:26.698] [ecsie] [info] Engine: LmHead loaded (248320 vocab, 2048 hidden)
+[19:50:26.699] [ecsie] [info] Engine: ExpertPredictor disabled (default — see C.3 result). Set ECSIE_EXPERT_PREDICTOR=ml or simple to enable.
+[19:50:26.699] [ecsie] [info] Engine: attention cfg: num_heads=16 num_kv_heads=2 head_dim=256 rope_theta=10000000.000000 rope_dim_count=64
+[19:50:33.539] [ecsie] [info] Engine: 40/40 transformer blocks initialised
+[19:50:33.539] [ecsie] [info] Engine: model loaded from "$MODELS_DIR/Models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-Q4_K_M.gguf"
+[measure_tps] batch_size=1 (Phase E if >1)
+[latency] step=0 (batch=1)  tps=0.78  steps=94  mean_step=971.559 ms  p99_step=4520.961 ms
+          attn_norm=0.003 ms  attention=0.642 ms  ffn_norm=0.002 ms  moe_dispatch=23.363 ms
+          spec: steps=94 drafted=376 accepted=0 rate=0.000 mean_depth=4.00
+[latency] step=1 (batch=1)  tps=1.08  steps=61  mean_step=516.053 ms  p99_step=2303.531 ms
+          attn_norm=0.004 ms  attention=0.567 ms  ffn_norm=0.002 ms  moe_dispatch=18.222 ms
+          spec: steps=61 drafted=244 accepted=0 rate=0.000 mean_depth=4.00
+[latency] step=2 (batch=1)  tps=2.61  steps=90  mean_step=297.854 ms  p99_step=1387.382 ms
+          attn_norm=0.003 ms  attention=0.757 ms  ffn_norm=0.004 ms  moe_dispatch=6.971 ms
+          spec: steps=90 drafted=360 accepted=0 rate=0.000 mean_depth=4.00
+[latency] step=3 (batch=1)  tps=2.34  steps=84  mean_step=335.500 ms  p99_step=1793.541 ms
+          attn_norm=0.003 ms  attention=0.488 ms  ffn_norm=0.002 ms  moe_dispatch=7.791 ms
+          spec: steps=84 drafted=336 accepted=0 rate=0.000 mean_depth=4.00
+[measure_tps] wrote 4 rows

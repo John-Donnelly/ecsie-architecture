@@ -1,0 +1,9 @@
+{
+  "model": "A:\\AI\\Models\\Qwen3-30B-A3B-Instruct-2507-GGUF\\Qwen3-30B-A3B-Instruct-2507-Q4_K_M.gguf",
+  "workload": "benchmarks\\workloads\\long_chatml_2600.json",
+  "reps": 3,
+  "configs": [
+    { "name": "kv_f16", "env": { "ECSIE_SPEC": "off", "ECSIE_MAX_CTX": "4096" } },
+    { "name": "kv_i8",  "env": { "ECSIE_SPEC": "off", "ECSIE_MAX_CTX": "4096", "ECSIE_KV_QUANT": "8" } }
+  ]
+}

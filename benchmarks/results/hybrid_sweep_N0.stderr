@@ -1,0 +1,31 @@
+[18:40:20.280] [ecsie] [info] Engine: RamPool allocated (6144 MB, ~50% of available RAM)
+[18:40:20.327] [ecsie] [info] Engine: VramPool allocated (2479 MB, adaptive)
+[18:40:20.328] [ecsie] [info] Engine: embedding table loaded (248320 tokens, 2048 hidden)
+[18:40:23.582] [ecsie] [info] Engine: LmHead loaded (248320 vocab, 2048 hidden)
+[18:40:23.588] [ecsie] [info] Engine: HierarchicalLmHead clusters loaded from $MODELS_DIR/Models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-Q4_K_M.gguf.clusters (512 clusters)
+[18:40:23.590] [ecsie] [info] Engine: HybridQuantSidecar loaded from $MODELS_DIR/Models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-Q4_K_M.gguf.hquant (40 layers × 256 experts)
+[18:40:23.591] [ecsie] [info] Engine: sidecar summary — hier_lm_head=yes hybrid_quant=yes struct_sparsity=no eagle3=no squeezellm=no q2emb=no shared_scales=no scylla=no
+[18:40:23.592] [ecsie] [info] Engine: ExpertPredictor disabled (default — see C.3 result). Set ECSIE_EXPERT_PREDICTOR=ml or simple to enable.
+[18:40:23.592] [ecsie] [info] Engine: attention cfg: num_heads=16 num_kv_heads=2 head_dim=256 rope_theta=10000000.000000 rope_dim_count=64
+[18:40:30.101] [ecsie] [info] Engine: 40/40 transformer blocks initialised
+[18:40:30.101] [ecsie] [info] Engine: model loaded from "$MODELS_DIR/Models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-Q4_K_M.gguf"
+[measure_tps] batch_size=1 (Phase E if >1)
+[latency] step=0 (batch=1)  tps=0.13  warm_step_rate=0.21  steps=7  mean_step=4661.736 ms  p99_step=6267.943 ms
+          attn_norm=0.003 ms  attention=0.543 ms  ffn_norm=0.004 ms  moe_dispatch=115.349 ms
+          spec: steps=4 drafted=15 accepted=0 rate=0.000 mean_depth=3.75
+[latency] step=1 (batch=1)  tps=0.28  warm_step_rate=0.34  steps=31  mean_step=2914.362 ms  p99_step=4638.708 ms
+          attn_norm=0.003 ms  attention=0.556 ms  ffn_norm=0.002 ms  moe_dispatch=76.313 ms
+          spec: steps=16 drafted=51 accepted=0 rate=0.000 mean_depth=3.19
+[latency] step=2 (batch=1)  tps=0.44  warm_step_rate=0.44  steps=7  mean_step=2277.434 ms  p99_step=2532.794 ms
+          attn_norm=0.004 ms  attention=0.510 ms  ffn_norm=0.003 ms  moe_dispatch=31.692 ms
+          spec: steps=4 drafted=15 accepted=0 rate=0.000 mean_depth=3.75
+[latency] step=3 (batch=1)  tps=0.32  warm_step_rate=0.37  steps=31  mean_step=2708.743 ms  p99_step=3721.398 ms
+          attn_norm=0.003 ms  attention=0.658 ms  ffn_norm=0.002 ms  moe_dispatch=65.158 ms
+          spec: steps=16 drafted=51 accepted=0 rate=0.000 mean_depth=3.19
+[latency] step=4 (batch=1)  tps=0.38  warm_step_rate=0.35  steps=7  mean_step=2840.823 ms  p99_step=3975.630 ms
+          attn_norm=0.003 ms  attention=0.512 ms  ffn_norm=0.002 ms  moe_dispatch=39.231 ms
+          spec: steps=4 drafted=15 accepted=0 rate=0.000 mean_depth=3.75
+[latency] step=5 (batch=1)  tps=0.32  warm_step_rate=0.38  steps=31  mean_step=2654.485 ms  p99_step=4117.686 ms
+          attn_norm=0.007 ms  attention=0.641 ms  ffn_norm=0.002 ms  moe_dispatch=64.217 ms
+          spec: steps=16 drafted=51 accepted=0 rate=0.000 mean_depth=3.19
+[measure_tps] wrote 6 rows

@@ -1,0 +1,8 @@
+{
+  "temperature": 0.0,
+  "repetitions": 1,
+  "batch_size": 1,
+  "prompts": [
+    { "text": "Return a JSON object with a key \"books\" whose value is an array of exactly 3 classic science fiction novels. For each book include the fields \"title\", \"author\", and \"year\" (the original publication year as an integer). Respond with only the JSON, no extra commentary.", "max_tokens": 200 }
+  ]
+}

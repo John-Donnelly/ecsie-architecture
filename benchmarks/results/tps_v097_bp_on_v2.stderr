@@ -1,0 +1,3 @@
+[14:29:06.553] [ecsie] [info] Engine: RamPool allocated (6144 MB, ~50% of available RAM)
+[14:29:06.574] [ecsie] [info] Engine: VramPool allocated (2479 MB, adaptive)
+[14:29:06.574] [ecsie] [info] Engine: embedding table loaded (248320 tokens, 2048 hidden)

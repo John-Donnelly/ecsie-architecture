@@ -1,0 +1,9 @@
+{
+  "description": "Short prefill, 80 decode tokens — lens-layer agreement sweep (ECSIE_LENS_DBG).",
+  "temperature": 0.0,
+  "repetitions": 1,
+  "batch_size": 1,
+  "prompts": [
+    { "text": "Explain how a transformer neural network works, step by step.", "max_tokens": 80 }
+  ]
+}

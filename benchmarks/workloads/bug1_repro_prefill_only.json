@@ -1,0 +1,12 @@
+{
+  "description": "Bug #1 reproducer with prefill only (max_tokens=1)",
+  "repetitions": 1,
+  "batch_size": 4,
+  "temperature": 1.0,
+  "prompts": [
+    { "text": "What is 2+2?",  "max_tokens": 1 },
+    { "text": "Name a color.", "max_tokens": 1 },
+    { "text": "Say hello.",    "max_tokens": 1 },
+    { "text": "Pick a fruit.", "max_tokens": 1 }
+  ]
+}

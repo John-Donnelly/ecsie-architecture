@@ -1,0 +1,12 @@
+{
+  "description": "tiny batch=4 reproducer for Bug #1 (ECSIE_BATCHED_FFN crash)",
+  "repetitions": 1,
+  "batch_size": 4,
+  "temperature": 1.0,
+  "prompts": [
+    { "text": "Hi.",  "max_tokens": 4 },
+    { "text": "OK.",  "max_tokens": 4 },
+    { "text": "Yes.", "max_tokens": 4 },
+    { "text": "No.",  "max_tokens": 4 }
+  ]
+}

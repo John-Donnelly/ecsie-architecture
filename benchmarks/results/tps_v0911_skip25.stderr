@@ -1,0 +1,23 @@
+[17:05:46.076] [ecsie] [info] Engine: RamPool allocated (6144 MB, ~50% of available RAM)
+[17:05:46.093] [ecsie] [info] Engine: VramPool allocated (2479 MB, adaptive)
+[17:05:46.093] [ecsie] [info] Engine: embedding table loaded (248320 tokens, 2048 hidden)
+[17:05:49.320] [ecsie] [info] Engine: LmHead loaded (248320 vocab, 2048 hidden)
+[17:05:49.325] [ecsie] [info] Engine: HierarchicalLmHead clusters loaded from $MODELS_DIR/Models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-Q4_K_M.gguf.clusters (512 clusters)
+[17:05:49.326] [ecsie] [info] Engine: ExpertPredictor disabled (default — see C.3 result). Set ECSIE_EXPERT_PREDICTOR=ml or simple to enable.
+[17:05:49.326] [ecsie] [info] Engine: attention cfg: num_heads=16 num_kv_heads=2 head_dim=256 rope_theta=10000000.000000 rope_dim_count=64
+[17:05:55.714] [ecsie] [info] Engine: 40/40 transformer blocks initialised
+[17:05:55.714] [ecsie] [info] Engine: model loaded from "$MODELS_DIR/Models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-Q4_K_M.gguf"
+[measure_tps] batch_size=1 (Phase E if >1)
+[latency] step=0 (batch=1)  tps=1.29  steps=94  mean_step=479.970 ms  p99_step=2082.566 ms
+          attn_norm=0.003 ms  attention=0.578 ms  ffn_norm=0.002 ms  moe_dispatch=43.277 ms
+          spec: steps=51 drafted=156 accepted=0 rate=0.000 mean_depth=3.06
+[latency] step=1 (batch=1)  tps=2.25  steps=61  mean_step=80.863 ms  p99_step=230.812 ms
+          attn_norm=0.003 ms  attention=0.510 ms  ffn_norm=0.002 ms  moe_dispatch=20.131 ms
+          spec: steps=58 drafted=177 accepted=0 rate=0.000 mean_depth=3.05
+[latency] step=2 (batch=1)  tps=6.23  steps=90  mean_step=69.598 ms  p99_step=1075.209 ms
+          attn_norm=0.003 ms  attention=0.465 ms  ffn_norm=0.002 ms  moe_dispatch=7.717 ms
+          spec: steps=87 drafted=264 accepted=0 rate=0.000 mean_depth=3.03
+[latency] step=3 (batch=1)  tps=5.38  steps=84  mean_step=46.289 ms  p99_step=89.591 ms
+          attn_norm=0.003 ms  attention=0.505 ms  ffn_norm=0.003 ms  moe_dispatch=7.946 ms
+          spec: steps=84 drafted=255 accepted=0 rate=0.000 mean_depth=3.04
+[measure_tps] wrote 4 rows

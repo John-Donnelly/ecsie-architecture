@@ -1,0 +1,8 @@
+{
+  "temperature": 0.0,
+  "repetitions": 1,
+  "batch_size": 1,
+  "prompts": [
+    { "text": "Write the opening scene of a short story about an aging lighthouse keeper on a remote northern island. It is the last winter before the light is automated, and a stranger's boat has just appeared on the horizon through the fog. Set the mood and introduce the keeper's quiet dread.", "max_tokens": 200 }
+  ]
+}

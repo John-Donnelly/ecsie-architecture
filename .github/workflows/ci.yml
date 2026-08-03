@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  shellcheck:
+    name: shellcheck the benchmark harness
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Run shellcheck
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck
+          # -S warning: style nits in a research harness are noise; real bugs are not.
+          find benchmarks -name '*.sh' -print0 | xargs -0 shellcheck -S warning
+
+  manifests:
+    name: validate ablation manifests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Every manifest must be valid JSON
+        run: |
+          fail=0
+          while IFS= read -r f; do
+            python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f" \
+              || { echo "invalid JSON: $f"; fail=1; }
+          done < <(find benchmarks -name '*.json')
+          exit $fail

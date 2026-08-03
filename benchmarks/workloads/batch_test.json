@@ -1,0 +1,15 @@
+{
+  "description": "Phase E batch scaling test — 8 short prompts, 3 reps",
+  "repetitions": 3,
+  "temperature": 1.0,
+  "prompts": [
+    { "text": "What is 2+2?",                      "max_tokens": 16 },
+    { "text": "Name the planets in our solar system.", "max_tokens": 32 },
+    { "text": "Explain photosynthesis briefly.",       "max_tokens": 24 },
+    { "text": "List three colors.",                    "max_tokens": 16 },
+    { "text": "What is the capital of France?",        "max_tokens": 12 },
+    { "text": "Why is the sky blue?",                  "max_tokens": 24 },
+    { "text": "Define artificial intelligence.",       "max_tokens": 28 },
+    { "text": "Translate 'hello' to Spanish.",         "max_tokens": 12 }
+  ]
+}

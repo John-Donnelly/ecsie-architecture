@@ -1,0 +1,14 @@
+{
+  "name": "spec_code",
+  "description": "Code-completion decode for spec-PLD measurement. Code has high local n-gram repetition (matching brackets, repeated identifiers, indentation patterns).",
+  "prompts": [
+    {
+      "text": "Write a Python class for a binary search tree with insert, search, and delete methods. Include type hints and docstrings.\n\nclass Node:\n    def __init__(self, value: int) -> None:\n        self.value: int = value\n        self.left: 'Optional[Node]' = None\n        self.right: 'Optional[Node]' = None\n\nclass BST:\n    def __init__(self) -> None:\n        self.root: 'Optional[Node]' = None\n\n    def insert(self, value: int) -> None:",
+      "max_tokens": 200
+    }
+  ],
+  "batch_size": 1,
+  "repetitions": 1,
+  "temperature": 0.0,
+  "seed": 42
+}

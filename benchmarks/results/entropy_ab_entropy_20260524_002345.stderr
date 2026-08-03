@@ -1,0 +1,11 @@
+[00:25:59.855] [ecsie] [info] Engine: RamPool allocated (6144 MB, ~50% of available RAM)
+[00:25:59.959] [ecsie] [info] Engine: VramPool allocated (2479 MB, adaptive, slot=3052 KB)
+[00:25:59.959] [ecsie] [info] Engine: embedding table loaded (151936 tokens, 2048 hidden)
+[00:26:01.659] [ecsie] [info] Engine: LmHead loaded (151936 vocab, 2048 hidden)
+[00:26:01.661] [ecsie] [info] Engine: sidecar summary — hier_lm_head=no hybrid_quant=no struct_sparsity=no eagle3=no squeezellm=no q2emb=no shared_scales=no scylla=no
+[00:26:01.661] [ecsie] [info] Engine: ExpertPredictor disabled (default — see C.3 result). Set ECSIE_EXPERT_PREDICTOR=ml or simple to enable.
+[00:26:01.661] [ecsie] [info] Engine: attention cfg: num_heads=32 num_kv_heads=4 head_dim=128 rope_theta=10000000.000000 rope_dim_count=0
+[00:26:05.485] [ecsie] [info] Engine: final RMSNorm loaded (output_norm.weight, 2048 dim)
+[00:26:05.485] [ecsie] [info] Engine: 48/48 transformer blocks initialised
+[00:26:05.485] [ecsie] [info] Engine: model loaded from "$MODELS_DIR/Models/Qwen3-30B-A3B-Instruct-2507-GGUF/Qwen3-30B-A3B-Instruct-2507-entropy.ecsie"
+[measure_tps] batch_size=1 (Phase E if >1)

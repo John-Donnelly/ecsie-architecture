@@ -1,0 +1,26 @@
+{
+  "name": "quick_rerun",
+  "description": "Auto-generated workload (seed=42)",
+  "prompts": [
+    {
+      "text": "Explain climate change in detail.",
+      "max_tokens": 95
+    },
+    {
+      "text": "What are the key challenges in neural network architecture?",
+      "max_tokens": 62
+    },
+    {
+      "text": "Explain quantum computing in detail.",
+      "max_tokens": 91
+    },
+    {
+      "text": "Explain the philosophy of mind in detail.",
+      "max_tokens": 85
+    }
+  ],
+  "batch_size": 4,
+  "repetitions": 1,
+  "temperature": 0.9,
+  "seed": 42
+}

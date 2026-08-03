@@ -1,0 +1,18 @@
+{
+  "name": "oom_repro",
+  "description": "Batch=4 / batch=8 OOM reproducer on Qwen3.6-35B-A3B.",
+  "prompts": [
+    { "text": "Write hello world in Python.",         "max_tokens": 32 },
+    { "text": "Translate hola to English.",          "max_tokens": 32 },
+    { "text": "What is 5+5?",                         "max_tokens": 32 },
+    { "text": "Name one ocean.",                      "max_tokens": 32 },
+    { "text": "List one color.",                      "max_tokens": 32 },
+    { "text": "What is 7+7?",                         "max_tokens": 32 },
+    { "text": "Translate bonjour to English.",        "max_tokens": 32 },
+    { "text": "Name one continent.",                  "max_tokens": 32 }
+  ],
+  "batch_size": 4,
+  "repetitions": 1,
+  "temperature": 0.0,
+  "seed": 42
+}

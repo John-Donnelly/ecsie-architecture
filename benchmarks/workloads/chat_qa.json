@@ -1,0 +1,13 @@
+{
+ "name": "chat_qa",
+ "description": "general chat-style question (chat-mix head eval)",
+ "batch_size": 1,
+ "repetitions": 1,
+ "temperature": 0.0,
+ "prompts": [
+  {
+   "text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nI'm planning a two-week trip to Japan in the autumn. Can you suggest an itinerary covering Tokyo, Kyoto and one less touristy region, with food recommendations and rough daily budgets?<|im_end|>\n<|im_start|>assistant\n",
+   "max_tokens": 400
+  }
+ ]
+}
